@@ -1,0 +1,155 @@
+
+1
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ ls -t
+Assignment02.txt  assignment01.txt  output.txt  file1.txt  dest.txt
+
+2
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ ls -S
+assignment01.txt  output.txt  dest.txt  Assignment02.txt  file1.txt
+
+3
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ ls -i
+2097656 assignment01.txt  2097359 dest.txt   2097358 output.txt
+2097733 Assignment02.txt  2097701 file1.txt
+
+4
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ mkdir -p dir1/dir2/dir3
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ ls -R
+.:
+assignment01.txt  dest.txt  file1.txt
+Assignment02.txt  dir1      output.txt
+
+./dir1:
+dir2
+
+./dir1/dir2:
+dir3
+
+./dir1/dir2/dir3:
+
+5
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ cat > myFile.txt
+hrutik
+piprade
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ cat >> myFile.txt
+Ward no. 4 Maregaon, Dist-Yavatmal.
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ cat myFile.txt
+hrutik
+piprade
+Ward no. 4 Maregaon, Dist-Yavatmal.
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ 
+
+6
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ touch file1.txt -t 201101021105
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ stat file1.txt
+  File: file1.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d	Inode: 2097701     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/  hrutik)   Gid: ( 1000/  hrutik)
+Access: 2011-01-02 11:05:00.000000000 +0530
+Modify: 2011-01-02 11:05:00.000000000 +0530
+Change: 2023-11-28 17:17:01.731673123 +0530
+ Birth: 2023-11-27 17:33:29.248172456 +0530
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ 
+
+
+7
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ mkdir one
+hrutik@hrutik-HP-Notebook:~/my assign progress/os$ cd one
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one$ touch 1.txt 11.txt 111.txt
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one$ mkdir two
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one$ cd two
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two$ touch 2.txt 22.txt 222.txt
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two$ mkdir three
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two$ cd three
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three$ touch 3.txt 33.txt 333.txt
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three$ mkdir four
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three$ cd four
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four$ touch 4.txt 44.txt 444.txt
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four$ mkdir five
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four$ cd five
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ cd ~
+hrutik@hrutik-HP-Notebook:~$ 
+
+
+8 
+i
+hrutik@hrutik-HP-Notebook:~$ ls ~/my\ assign\ progress/os/one/two/three/four/five
+555.txt  55.txt  5.txt
+hrutik@hrutik-HP-Notebook:~$ 
+
+ii
+hrutik@hrutik-HP-Notebook:~$ cat >> ~/my\ assign\ progress/os/one/two/three/four/44.txt 
+hrutik
+piprade
+
+iii
+
+hrutik@hrutik-HP-Notebook:~$ rm ~/my\ assign\ progress/os/one/two/three/four/five/555.txt
+hrutik@hrutik-HP-Notebook:~$ 
+
+iV
+
+hrutik@hrutik-HP-Notebook:~$ cd ~/my\ assign\ progress/os/one/two/three/four/five
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ 
+
+v
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ cat >> ../../3.txt
+PG-DAC
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ cat ../../3.txt
+PG-DAC
+
+
+vi
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ ls ../../../
+22.txt  2.txt  three
+
+vii
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ rm ../../../222.txt
+
+
+viii
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one/two/three/four/five$ cd ../../../../
+
+
+iX
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one$ rm two/three/four/five/*
+
+x
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one$ rmdir two/three/four/five
+
+xi
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one$ rm -R two/three/four 
+
+
+
+xii
+
+hrutik@hrutik-HP-Notebook:~/my assign progress/os/one$ cd ~
+
+
+9
+
+hrutik@hrutik-HP-Notebook:~$ touch ~/my\ assign\ progress/os/one/two/three/3.txt -t 2902030405
+hrutik@hrutik-HP-Notebook:~$ stat ~/my\ assign\ progress/os/one/two/three/3.txt
+  File: /home/hrutik/my assign progress/os/one/two/three/3.txt
+  Size: 7         	Blocks: 8          IO Block: 4096   regular file
+Device: 809h/2057d	Inode: 2097779     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/  hrutik)   Gid: ( 1000/  hrutik)
+Access: 2029-02-03 04:05:00.000000000 +0530
+Modify: 2029-02-03 04:05:00.000000000 +0530
+Change: 2023-11-28 18:29:40.523383421 +0530
+ Birth: 2023-11-28 17:58:52.959942755 +0530
+
+
+
+
